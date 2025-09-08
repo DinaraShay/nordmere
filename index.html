@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordmere</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/inc/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/inc/wow/animate.min.css">
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-content">
+            <svg width="510" height="94" viewBox="0 0 510 94" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="zooming-svg">
+                <defs>
+                    <linearGradient id="gradientFill" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#EF745C;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#34073D;stop-opacity:1" />
+                    </linearGradient>
+                    <mask id="path-1-inside-1_802_1566" fill="white">
+                        <path
+                            d="M47.0046 1.73438C53.1771 1.73438 59.289 2.92707 64.9917 5.2436C70.6945 7.56031 75.877 10.956 80.2418 15.2367C84.6066 19.5174 88.0689 24.6001 90.4311 30.1931C92.7931 35.7859 94.0092 41.7801 94.0092 47.8338C94.0092 53.8874 92.7931 59.8816 90.4311 65.4744C88.0689 71.0675 84.6066 76.1501 80.2418 80.4309C75.877 84.7116 70.6945 88.1072 64.9917 90.4239C59.289 92.7405 53.1771 93.9332 47.0046 93.9332C40.8321 93.9332 34.7202 92.7405 29.0175 90.4239C23.3147 88.1072 18.1322 84.7116 13.7674 80.4309C9.40266 76.1501 5.94034 71.0675 3.57813 65.4744C1.21611 59.8816 0 53.8874 0 47.8338C8.98364e-07 41.7801 1.21611 35.7859 3.57813 30.1931C5.94034 24.6001 9.40266 19.5174 13.7674 15.2367C18.1322 10.956 23.3147 7.56031 29.0175 5.2436C34.7202 2.92707 40.8321 1.73438 47.0046 1.73438ZM47.0046 11.3831C42.124 11.3831 37.2907 12.3257 32.7816 14.1574C28.2725 15.9892 24.1752 18.6746 20.724 22.0593C17.2729 25.444 14.5347 29.4624 12.6669 33.8847C10.7993 38.3069 9.83815 43.0472 9.83815 47.8338C9.83815 52.6204 10.7993 57.3606 12.6669 61.7829C14.5347 66.2051 17.2729 70.2236 20.724 73.6082C24.1752 76.9929 28.2725 79.6784 32.7816 81.5102C37.2907 83.3419 42.124 84.2845 47.0046 84.2845C51.885 84.2845 56.7176 83.3417 61.2265 81.5102C65.7357 79.6784 69.834 76.993 73.2852 73.6082C76.7363 70.2236 79.4745 66.2051 81.3423 61.7829C83.21 57.3606 84.1711 52.6204 84.1711 47.8338C84.1711 43.0474 83.2098 38.3079 81.3423 33.8858C79.4745 29.4634 76.7364 25.4441 73.2852 22.0593C69.8341 18.6746 65.7367 15.9892 61.2276 14.1574C56.7185 12.3257 51.8852 11.3831 47.0046 11.3831ZM56.8439 38.184L83.4332 47.8338L56.8439 57.4836L47.0046 83.5608L37.1653 57.4836L10.576 47.8338L37.1653 38.184L47.0046 12.1067L56.8439 38.184ZM188.606 24.7841C203.06 24.7841 212.696 31.6437 212.696 47.8844C212.696 64.0241 203.06 70.8835 188.606 70.8835C174.152 70.8835 164.516 64.0241 164.516 47.8844C164.516 31.6437 174.152 24.7841 188.606 24.7841ZM399.289 24.7841C415.292 24.7843 423.041 34.1656 423.041 50.3053V51.6165H387.412V51.7178C387.412 55.8536 391.035 62.107 399.289 62.107C404.174 62.1069 407.627 60.1905 409.396 56.4583H422.368C418.83 66.6464 410.407 70.8833 399.289 70.8835C384.633 70.8835 374.862 64.0241 374.862 47.8844C374.862 31.6437 384.633 24.7841 399.289 24.7841ZM486.826 24.7841C502.439 24.7841 510 34.1655 510 50.3053V51.6165H475.24V51.7178C475.24 55.8535 478.773 62.1068 486.826 62.107C491.592 62.107 494.961 60.1906 496.687 56.4583H509.342C505.891 66.6465 497.673 70.8835 486.826 70.8835C472.528 70.8833 462.995 64.0239 462.995 47.8844C462.995 31.6439 472.528 24.7842 486.826 24.7841ZM144.108 25.9366C150.341 25.9366 159.816 28.7493 159.816 41.3049V69.731H147.848V45.5232C147.848 39.5972 145.188 36.7851 139.786 36.785C134.217 36.785 129.48 39.9989 129.48 49.1393V69.731H117.512V27.0418H129.064V33.269H129.231C131.392 29.653 137.126 25.9366 144.108 25.9366ZM243.561 25.9366C244.969 25.9366 246.542 26.037 247.949 26.3384V39.4963C245.714 38.7932 243.561 38.1907 241.326 38.1907C233.211 38.1907 229.32 43.0127 229.32 51.3498V69.731H217.396V27.0418H228.905V35.3782H229.071C233.376 28.8492 236.771 25.9366 243.561 25.9366ZM277.507 25.9366C290.484 25.9366 296.129 34.68 296.129 47.8338C296.129 60.9874 290.29 69.7308 278.416 69.731H253.825V25.9366H277.507ZM355.508 25.9366C362.876 25.9366 370.161 29.553 370.161 40.8029V69.731H358.02V44.1175C358.02 38.3921 354.168 36.785 350.651 36.785C345.627 36.785 341.525 39.8985 341.525 46.6284V69.731H329.466V44.1175C329.466 38.392 325.531 36.785 322.181 36.785C316.99 36.7852 312.887 39.8987 312.887 46.6284V69.731H300.829V27.0418H312.468V33.269H312.636C314.813 29.653 320.591 25.9366 327.624 25.9366C334.658 25.9366 338.51 29.151 340.352 33.9724C343.701 28.8497 348.809 25.9366 355.508 25.9366ZM453.907 25.9366C455.314 25.9366 456.887 26.037 458.295 26.3384V39.4963C456.059 38.7932 453.907 38.1907 451.671 38.1907C443.557 38.1907 439.665 43.0127 439.665 51.3498V69.731H427.742V27.0418H439.251V35.3782H439.416C443.722 28.8492 447.117 25.9366 453.907 25.9366ZM264.142 61.3743H275.625C282.438 61.3743 285.488 56.6543 285.488 47.4466C285.488 39.3224 282.503 34.2932 274.652 34.2932H264.142V61.3743ZM188.606 34.7704C181.213 34.7704 176.894 39.411 176.894 47.8844C176.894 56.2568 181.213 60.8971 188.606 60.8971C195.999 60.8971 200.318 56.2568 200.318 47.8844C200.318 39.411 195.999 34.7704 188.606 34.7704ZM399.035 33.5605C389.435 33.5608 387.412 42.0318 387.412 43.1428V43.2441H410.492V43.1428C410.491 40.8223 407.879 33.5605 399.035 33.5605ZM486.58 33.5605C477.213 33.5605 475.24 42.0318 475.24 43.1428V43.2441H497.755V43.1428C497.755 40.8224 495.208 33.5608 486.58 33.5605Z" />
+                    </mask>
+                    <clipPath id="clipFill">
+                        <rect x="0" y="0" width="0" height="94">
+                            <animate attributeName="width" from="0" to="510" dur="2s" begin="1s" repeatCount="1"
+                                fill="freeze" />
+                        </rect>
+                    </clipPath>
+                </defs>
+                <!-- Stroke path (visible initially) -->
+                <path
+                    d="M47.0046 1.73438C53.1771 1.73438 59.289 2.92707 64.9917 5.2436C70.6945 7.56031 75.877 10.956 80.2418 15.2367C84.6066 19.5174 88.0689 24.6001 90.4311 30.1931C92.7931 35.7859 94.0092 41.7801 94.0092 47.8338C94.0092 53.8874 92.7931 59.8816 90.4311 65.4744C88.0689 71.0675 84.6066 76.1501 80.2418 80.4309C75.877 84.7116 70.6945 88.1072 64.9917 90.4239C59.289 92.7405 53.1771 93.9332 47.0046 93.9332C40.8321 93.9332 34.7202 92.7405 29.0175 90.4239C23.3147 88.1072 18.1322 84.7116 13.7674 80.4309C9.40266 76.1501 5.94034 71.0675 3.57813 65.4744C1.21611 59.8816 0 53.8874 0 47.8338C8.98364e-07 41.7801 1.21611 35.7859 3.57813 30.1931C5.94034 24.6001 9.40266 19.5174 13.7674 15.2367C18.1322 10.956 23.3147 7.56031 29.0175 5.2436C34.7202 2.92707 40.8321 1.73438 47.0046 1.73438ZM47.0046 11.3831C42.124 11.3831 37.2907 12.3257 32.7816 14.1574C28.2725 15.9892 24.1752 18.6746 20.724 22.0593C17.2729 25.444 14.5347 29.4624 12.6669 33.8847C10.7993 38.3069 9.83815 43.0472 9.83815 47.8338C9.83815 52.6204 10.7993 57.3606 12.6669 61.7829C14.5347 66.2051 17.2729 70.2236 20.724 73.6082C24.1752 76.9929 28.2725 79.6784 32.7816 81.5102C37.2907 83.3419 42.124 84.2845 47.0046 84.2845C51.885 84.2845 56.7176 83.3417 61.2265 81.5102C65.7357 79.6784 69.834 76.993 73.2852 73.6082C76.7363 70.2236 79.4745 66.2051 81.3423 61.7829C83.21 57.3606 84.1711 52.6204 84.1711 47.8338C84.1711 43.0474 83.2098 38.3079 81.3423 33.8858C79.4745 29.4634 76.7364 25.4441 73.2852 22.0593C69.8341 18.6746 65.7367 15.9892 61.2276 14.1574C56.7185 12.3257 51.8852 11.3831 47.0046 11.3831ZM56.8439 38.184L83.4332 47.8338L56.8439 57.4836L47.0046 83.5608L37.1653 57.4836L10.576 47.8338L37.1653 38.184L47.0046 12.1067L56.8439 38.184ZM188.606 24.7841C203.06 24.7841 212.696 31.6437 212.696 47.8844C212.696 64.0241 203.06 70.8835 188.606 70.8835C174.152 70.8835 164.516 64.0241 164.516 47.8844C164.516 31.6437 174.152 24.7841 188.606 24.7841ZM399.289 24.7841C415.292 24.7843 423.041 34.1656 423.041 50.3053V51.6165H387.412V51.7178C387.412 55.8536 391.035 62.107 399.289 62.107C404.174 62.1069 407.627 60.1905 409.396 56.4583H422.368C418.83 66.6464 410.407 70.8833 399.289 70.8835C384.633 70.8835 374.862 64.0241 374.862 47.8844C374.862 31.6437 384.633 24.7841 399.289 24.7841ZM486.826 24.7841C502.439 24.7841 510 34.1655 510 50.3053V51.6165H475.24V51.7178C475.24 55.8535 478.773 62.1068 486.826 62.107C491.592 62.107 494.961 60.1906 496.687 56.4583H509.342C505.891 66.6465 497.673 70.8835 486.826 70.8835C472.528 70.8833 462.995 64.0239 462.995 47.8844C462.995 31.6439 472.528 24.7842 486.826 24.7841ZM144.108 25.9366C150.341 25.9366 159.816 28.7493 159.816 41.3049V69.731H147.848V45.5232C147.848 39.5972 145.188 36.7851 139.786 36.785C134.217 36.785 129.48 39.9989 129.48 49.1393V69.731H117.512V27.0418H129.064V33.269H129.231C131.392 29.653 137.126 25.9366 144.108 25.9366ZM243.561 25.9366C244.969 25.9366 246.542 26.037 247.949 26.3384V39.4963C245.714 38.7932 243.561 38.1907 241.326 38.1907C233.211 38.1907 229.32 43.0127 229.32 51.3498V69.731H217.396V27.0418H228.905V35.3782H229.071C233.376 28.8492 236.771 25.9366 243.561 25.9366ZM277.507 25.9366C290.484 25.9366 296.129 34.68 296.129 47.8338C296.129 60.9874 290.29 69.7308 278.416 69.731H253.825V25.9366H277.507ZM355.508 25.9366C362.876 25.9366 370.161 29.553 370.161 40.8029V69.731H358.02V44.1175C358.02 38.3921 354.168 36.785 350.651 36.785C345.627 36.785 341.525 39.8985 341.525 46.6284V69.731H329.466V44.1175C329.466 38.392 325.531 36.785 322.181 36.785C316.99 36.7852 312.887 39.8987 312.887 46.6284V69.731H300.829V27.0418H312.468V33.269H312.636C314.813 29.653 320.591 25.9366 327.624 25.9366C334.658 25.9366 338.51 29.151 340.352 33.9724C343.701 28.8497 348.809 25.9366 355.508 25.9366ZM453.907 25.9366C455.314 25.9366 456.887 26.037 458.295 26.3384V39.4963C456.059 38.7932 453.907 38.1907 451.671 38.1907C443.557 38.1907 439.665 43.0127 439.665 51.3498V69.731H427.742V27.0418H439.251V35.3782H439.416C443.722 28.8492 447.117 25.9366 453.907 25.9366ZM264.142 61.3743H275.625C282.438 61.3743 285.488 56.6543 285.488 47.4466C285.488 39.3224 282.503 34.2932 274.652 34.2932H264.142V61.3743ZM188.606 34.7704C181.213 34.7704 176.894 39.411 176.894 47.8844C176.894 56.2568 181.213 60.8971 188.606 60.8971C195.999 60.8971 200.318 56.2568 200.318 47.8844C200.318 39.411 195.999 34.7704 188.606 34.7704ZM399.035 33.5605C389.435 33.5608 387.412 42.0318 387.412 43.1428V43.2441H410.492V43.1428C410.491 40.8223 407.879 33.5605 399.035 33.5605ZM486.58 33.5605C477.213 33.5605 475.24 42.0318 475.24 43.1428V43.2441H497.755V43.1428C497.755 40.8224 495.208 33.5608 486.58 33.5605Z"
+                    stroke="#5A5A5A" stroke-width="2" mask="url(#path-1-inside-1_802_1566)" />
+                <!-- Filled path (revealed by clipPath) -->
+                <g clip-path="url(#clipFill)">
+                    <path
+                        d="M47.0046 1.73438C53.1771 1.73438 59.289 2.92707 64.9917 5.2436C70.6945 7.56031 75.877 10.956 80.2418 15.2367C84.6066 19.5174 88.0689 24.6001 90.4311 30.1931C92.7931 35.7859 94.0092 41.7801 94.0092 47.8338C94.0092 53.8874 92.7931 59.8816 90.4311 65.4744C88.0689 71.0675 84.6066 76.1501 80.2418 80.4309C75.877 84.7116 70.6945 88.1072 64.9917 90.4239C59.289 92.7405 53.1771 93.9332 47.0046 93.9332C40.8321 93.9332 34.7202 92.7405 29.0175 90.4239C23.3147 88.1072 18.1322 84.7116 13.7674 80.4309C9.40266 76.1501 5.94034 71.0675 3.57813 65.4744C1.21611 59.8816 0 53.8874 0 47.8338C8.98364e-07 41.7801 1.21611 35.7859 3.57813 30.1931C5.94034 24.6001 9.40266 19.5174 13.7674 15.2367C18.1322 10.956 23.3147 7.56031 29.0175 5.2436C34.7202 2.92707 40.8321 1.73438 47.0046 1.73438ZM47.0046 11.3831C42.124 11.3831 37.2907 12.3257 32.7816 14.1574C28.2725 15.9892 24.1752 18.6746 20.724 22.0593C17.2729 25.444 14.5347 29.4624 12.6669 33.8847C10.7993 38.3069 9.83815 43.0472 9.83815 47.8338C9.83815 52.6204 10.7993 57.3606 12.6669 61.7829C14.5347 66.2051 17.2729 70.2236 20.724 73.6082C24.1752 76.9929 28.2725 79.6784 32.7816 81.5102C37.2907 83.3419 42.124 84.2845 47.0046 84.2845C51.885 84.2845 56.7176 83.3417 61.2265 81.5102C65.7357 79.6784 69.834 76.993 73.2852 73.6082C76.7363 70.2236 79.4745 66.2051 81.3423 61.7829C83.21 57.3606 84.1711 52.6204 84.1711 47.8338C84.1711 43.0474 83.2098 38.3079 81.3423 33.8858C79.4745 29.4634 76.7364 25.4441 73.2852 22.0593C69.8341 18.6746 65.7367 15.9892 61.2276 14.1574C56.7185 12.3257 51.8852 11.3831 47.0046 11.3831ZM56.8439 38.184L83.4332 47.8338L56.8439 57.4836L47.0046 83.5608L37.1653 57.4836L10.576 47.8338L37.1653 38.184L47.0046 12.1067L56.8439 38.184ZM188.606 24.7841C203.06 24.7841 212.696 31.6437 212.696 47.8844C212.696 64.0241 203.06 70.8835 188.606 70.8835C174.152 70.8835 164.516 64.0241 164.516 47.8844C164.516 31.6437 174.152 24.7841 188.606 24.7841ZM399.289 24.7841C415.292 24.7843 423.041 34.1656 423.041 50.3053V51.6165H387.412V51.7178C387.412 55.8536 391.035 62.107 399.289 62.107C404.174 62.1069 407.627 60.1905 409.396 56.4583H422.368C418.83 66.6464 410.407 70.8833 399.289 70.8835C384.633 70.8835 374.862 64.0241 374.862 47.8844C374.862 31.6437 384.633 24.7841 399.289 24.7841ZM486.826 24.7841C502.439 24.7841 510 34.1655 510 50.3053V51.6165H475.24V51.7178C475.24 55.8535 478.773 62.1068 486.826 62.107C491.592 62.107 494.961 60.1906 496.687 56.4583H509.342C505.891 66.6465 497.673 70.8835 486.826 70.8835C472.528 70.8833 462.995 64.0239 462.995 47.8844C462.995 31.6439 472.528 24.7842 486.826 24.7841ZM144.108 25.9366C150.341 25.9366 159.816 28.7493 159.816 41.3049V69.731H147.848V45.5232C147.848 39.5972 145.188 36.7851 139.786 36.785C134.217 36.785 129.48 39.9989 129.48 49.1393V69.731H117.512V27.0418H129.064V33.269H129.231C131.392 29.653 137.126 25.9366 144.108 25.9366ZM243.561 25.9366C244.969 25.9366 246.542 26.037 247.949 26.3384V39.4963C245.714 38.7932 243.561 38.1907 241.326 38.1907C233.211 38.1907 229.32 43.0127 229.32 51.3498V69.731H217.396V27.0418H228.905V35.3782H229.071C233.376 28.8492 236.771 25.9366 243.561 25.9366ZM277.507 25.9366C290.484 25.9366 296.129 34.68 296.129 47.8338C296.129 60.9874 290.29 69.7308 278.416 69.731H253.825V25.9366H277.507ZM355.508 25.9366C362.876 25.9366 370.161 29.553 370.161 40.8029V69.731H358.02V44.1175C358.02 38.3921 354.168 36.785 350.651 36.785C345.627 36.785 341.525 39.8985 341.525 46.6284V69.731H329.466V44.1175C329.466 38.392 325.531 36.785 322.181 36.785C316.99 36.7852 312.887 39.8987 312.887 46.6284V69.731H300.829V27.0418H312.468V33.269H312.636C314.813 29.653 320.591 25.9366 327.624 25.9366C334.658 25.9366 338.51 29.151 340.352 33.9724C343.701 28.8497 348.809 25.9366 355.508 25.9366ZM453.907 25.9366C455.314 25.9366 456.887 26.037 458.295 26.3384V39.4963C456.059 38.7932 453.907 38.1907 451.671 38.1907C443.557 38.1907 439.665 43.0127 439.665 51.3498V69.731H427.742V27.0418H439.251V35.3782H439.416C443.722 28.8492 447.117 25.9366 453.907 25.9366ZM264.142 61.3743H275.625C282.438 61.3743 285.488 56.6543 285.488 47.4466C285.488 39.3224 282.503 34.2932 274.652 34.2932H264.142V61.3743ZM188.606 34.7704C181.213 34.7704 176.894 39.411 176.894 47.8844C176.894 56.2568 181.213 60.8971 188.606 60.8971C195.999 60.8971 200.318 56.2568 200.318 47.8844C200.318 39.411 195.999 34.7704 188.606 34.7704ZM399.035 33.5605C389.435 33.5608 387.412 42.0318 387.412 43.1428V43.2441H410.492V43.1428C410.491 40.8223 407.879 33.5605 399.035 33.5605ZM486.58 33.5605C477.213 33.5605 475.24 42.0318 475.24 43.1428V43.2441H497.755V43.1428C497.755 40.8224 495.208 33.5608 486.58 33.5605Z"
+                        fill="url(#gradientFill)" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <header class="header-sticky container">
+        <div class="header__inner">
+            <img src="assets/images/svg/logo.svg" alt="logo" class="header__logo">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#hero" class="header__menu-link">Home</a></li>
+                    <li class="header__menu-item"><a href="#about" class="header__menu-link">About</a></li>
+                    <li class="header__menu-item"><a href="#testimonials" class="header__menu-link">Reviews</a></li>
+                    <li class="header__menu-item"><a href="#contact" class="header__menu-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact-form" class="header__cta">Get in touch</a>
+        </div>
+    </header>
+
+    <header class="header container">
+        <div class="header__inner">
+            <img src="assets/images/svg/logo.svg" alt="logo" class="header__logo">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#hero" class="header__menu-link">Home</a></li>
+                    <li class="header__menu-item"><a href="#about" class="header__menu-link">About</a></li>
+                    <li class="header__menu-item"><a href="#testimonials" class="header__menu-link">Reviews</a></li>
+                    <li class="header__menu-item"><a href="#contact" class="header__menu-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact-form" class="header__cta">Get in touch</a>
+        </div>
+    </header>
+    <header class="header-mobile">
+        <a href="#hero" class="logo">
+            <img src="assets/images/svg/logo.svg" alt="logo" class="header__logo">
+        </a>
+
+        <div class="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-menu">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#hero" class="header__menu-link">Home</a></li>
+            <li class="menu-item"><a href="#about" class="header__menu-link">About</a></li>
+            <li class="menu-item"><a href="#testimonials" class="header__menu-link">Reviews</a></li>
+            <li class="menu-item"><a href="#contact" class="header__menu-link">Contact</a></li>
+        </ul>
+        <a href="#contact-form" class="header__cta">Get in touch</a>
+    </nav>
+
+    <!-- Затемнение фона -->
+    <div class="overlay"></div>
+
+    <main class="main">
+        <section id="hero" class="hero">
+            <div class="hero__inner container--sm">
+                <h1 class="hero__title wow animate__fadeInUp">Building Tomorrow’s <span>Assets – Today</span></h1>
+                <div class="hero__actions wow animate__fadeIn">
+                    <p class="hero__subtitle " data-wow-delay="0.4s">Nordmere is a UAE-based investment holding with a
+                        disciplined focus on
+                        private equity, unlocking high-value opportunities in commercial real estate and beyond.</p>
+                    <a href="#" class="hero__btn">About us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="video u-m50">
+            <div class="video__wrapper">
+                <video class="video__media" autoplay loop muted playsinline>
+                    <source src="assets/video/video__main.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="assets/images/svg/logo-full.svg" alt="Logo" class="video__overlay">
+            </div>
+        </section>
+
+        <section class="about u-mt-128 u-pb-248">
+            <div class="header__subtitle container--sm">
+                <span class="subtitle wow animate__fadeInUp">what we are</span>
+            </div>
+            <div class="about__inner u-m50">
+                <h2 class="about__title u-mt-128 wow animate__fadeIn" data-wow-delay="0.2s">Where Vision<br> Meets
+                    Capital - <br><span>Strategic
+                        Investments</span><br> for Discerning Partners</h2>
+            </div>
+        </section>
+        <section class="our-investment u-bgc-grey u-p-248">
+            <div class="header__subtitle container--sm">
+                <span class="subtitle wow animate__fadeInUp">our investment focus</span>
+            </div>
+            <div class="our-investment__wrapper container--sm">
+                <!-- <h2 class="u-mt-50 u-mb-b128">Targets high-growth sectors<br> with long-term value creation:</h2> -->
+                <div class="neuros_heading_animation u-mt-50 u-mb-b128">
+                    <div class="neuros-heading">
+                        <span class="neuros-heading-content has_gradient_color_text">
+                            <span class="word"><span class="letter">T</span><span class="letter">a</span><span
+                                    class="letter">r</span><span class="letter">g</span><span
+                                    class="letter">e</span><span class="letter">t</span><span
+                                    class="letter">s</span></span>
+                            <span class="word"><span class="letter">h</span><span class="letter">i</span><span
+                                    class="letter">g</span><span class="letter">h</span><span
+                                    class="letter">-</span><span class="letter">g</span><span
+                                    class="letter">r</span><span class="letter">o</span><span
+                                    class="letter">w</span><span class="letter">t</span><span
+                                    class="letter">h</span></span>
+                            <span class="word"><span class="letter">s</span><span class="letter">e</span><span
+                                    class="letter">c</span><span class="letter">t</span><span
+                                    class="letter">o</span><span class="letter">r</span><span
+                                    class="letter">s</span></span>
+                            <span class="word"><span class="letter">w</span><span class="letter">i</span><span
+                                    class="letter">t</span><span class="letter">h</span></span>
+                            <span class="word"><span class="letter">l</span><span class="letter">o</span><span
+                                    class="letter">n</span><span class="letter">g</span><span
+                                    class="letter">-</span><span class="letter">t</span><span
+                                    class="letter">e</span><span class="letter">r</span><span
+                                    class="letter">m</span></span>
+                            <span class="word"><span class="letter">v</span><span class="letter">a</span><span
+                                    class="letter">l</span><span class="letter">u</span><span
+                                    class="letter">e</span></span>
+                            <span class="word"><span class="letter">c</span><span class="letter">r</span><span
+                                    class="letter">e</span><span class="letter">a</span><span
+                                    class="letter">t</span><span class="letter">i</span><span
+                                    class="letter">o</span><span class="letter">n</span><span
+                                    class="letter">:</span></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="our-investment__inner">
+                    <article class="our-investment__card our-investment__card--tall  wow animate__fadeInUp"
+                        aria-label="Commercial Real Estate">
+                        <div class="our-investment__content">
+                            <h3 class="our-investment__title">Commercial Real Estate</h3>
+                            <p class="our-investment__text">Prime assets in emerging and established markets</p>
+                        </div>
+                    </article>
+                    <article class="our-investment__card our-investment__card--large  wow animate__fadeInUp"
+                        aria-label="Technology & Innovation">
+                        <div class="our-investment__content our-investment__content--center">
+                            <h3 class="our-investment__title">Technology & Innovation</h3>
+                            <p class="our-investment__text">Disruptive ventures with scalable potential</p>
+                        </div>
+                    </article>
+                    <div class="article__col">
+                        <article class="our-investment__card our-investment__card--small  wow animate__fadeInUp"
+                            aria-label="Infrastructure & Logistics">
+                            <div class="our-investment__content">
+                                <h3 class="our-investment__title">Infrastructure & Logistics</h3>
+                                <p class="our-investment__text">Critical developments driving economic progress</p>
+                            </div>
+                        </article>
+                        <article class="our-investment__card our-investment__card--wide  wow animate__fadeInUp"
+                            aria-label="Sustainable Ventures">
+                            <div class="our-investment__content">
+                                <h3 class="our-investment__title">Sustainable Ventures</h3>
+                                <p class="our-investment__text">ESG-aligned projects shaping the future</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ticker u-p-248">
+            <div class="ticker__container">
+                <div class="ticker__stroke2">
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                </div>
+                <div class="ticker__stroke1">
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                    <p class="ticker__item">Where Vision Meets Capital – <span>Strategic Investments for
+                            Discerning</span>
+                        Partners&nbsp;</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="our-story u-p-248">
+            <div class="header__subtitle container--sm">
+                <span class="subtitle wow animate__fadeInUp">about nordmere</span>
+            </div>
+            <div class="our-story__inner container--sm">
+                <div class="our-story_text">
+                    <!-- <h2 class="u-m64">Our story</h2> -->
+                    <div class="neuros-heading u-m64">
+                        <span class="neuros-heading-content has_gradient_color_text">
+                            <span class="word"><span class="letter">O</span><span class="letter">u</span><span
+                                    class="letter">r</span></span>
+                            <span class="word"><span class="letter">s</span><span class="letter">t</span><span
+                                    class="letter">o</span><span class="letter">r</span><span
+                                    class="letter">y</span></span>
+                        </span>
+                    </div>
+                    <div class="our-story-text_inner wow animate__fadeInUp">
+                        <p>Nordmere was founded on the belief that intelligent capital deployment can redefine
+                            industries.
+                            As a newly established UAE investment holding, we combine global expertise with regional
+                            agility, focusing on private equity investments that deliver sustainable growth.
+                        </p>
+                        <p>Our first strategic move—into commercial real estate—reflects our commitment to tangible,
+                            high-yield assets. But our vision extends further. We seek opportunities where
+                            foresight,
+                            discipline, and partnership converge to build lasting value.</p>
+                    </div>
+
+                </div>
+                <div class="our-story__image">
+                    <img src="assets/images/png/logo-colors.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials u-m50 u-mt-248">
+            <div class="testimonials__list container--sm u-p-128">
+                <div class="testimonials__slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p>“ Nordmere’s strategic approach to private equity sets them apart. Their due
+                                    diligence is unmatched, and their execution is flawless ”</p>
+                                <span>— Mark Ellington, CEO, Alton Capital Group</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>"Working with Nordmere means accessing not just capital, but a partner deeply
+                                    invested in success." </p>
+                                <span>— Leila Mansour, Director, Horizon Ventures</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>"Their UAE positioning gives them unique advantages—speed, efficiency, and market
+                                    insight we haven’t found elsewhere." </p>
+                                <span>— Richard Voss, Partner, Blackwood Global</span>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_808_326)">
+                                    <circle cx="32" cy="32" r="32" fill="#333333" />
+                                    <path
+                                        d="M48.3536 32.3536C48.5488 32.1583 48.5488 31.8417 48.3536 31.6464L45.1716 28.4645C44.9763 28.2692 44.6597 28.2692 44.4645 28.4645C44.2692 28.6597 44.2692 28.9763 44.4645 29.1716L47.2929 32L44.4645 34.8284C44.2692 35.0237 44.2692 35.3403 44.4645 35.5355C44.6597 35.7308 44.9763 35.7308 45.1716 35.5355L48.3536 32.3536ZM16 32V32.5H48V32V31.5H16V32Z"
+                                        fill="#F0F0F0" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_808_326">
+                                        <rect width="64" height="64" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_808_329)">
+                                    <circle cx="32" cy="32" r="32" transform="rotate(180 32 32)" fill="#333333" />
+                                    <path
+                                        d="M15.6464 31.6464C15.4512 31.8417 15.4512 32.1583 15.6464 32.3536L18.8284 35.5355C19.0237 35.7308 19.3403 35.7308 19.5355 35.5355C19.7308 35.3403 19.7308 35.0237 19.5355 34.8284L16.7071 32L19.5355 29.1716C19.7308 28.9763 19.7308 28.6597 19.5355 28.4645C19.3403 28.2692 19.0237 28.2692 18.8284 28.4645L15.6464 31.6464ZM48 32L48 31.5L16 31.5L16 32L16 32.5L48 32.5L48 32Z"
+                                        fill="#F0F0F0" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_808_329">
+                                        <rect width="64" height="64" fill="white"
+                                            transform="translate(64 64) rotate(180)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials_title">
+                    <!-- <h2>The Voice of Our Partnerships<br>Trusted by Industry Leaders</h2> -->
+                    <div class="neuros-heading">
+                        <span class="neuros-heading-content has_gradient_color_text">
+                            <span class="word"><span class="letter">T</span><span class="letter">h</span><span
+                                    class="letter">e</span></span>
+                            <span class="word"><span class="letter">V</span><span class="letter">o</span><span
+                                    class="letter">i</span><span class="letter">c</span><span
+                                    class="letter">e</span></span>
+                            <span class="word"><span class="letter">o</span><span class="letter">f</span></span>
+                            <span class="word"><span class="letter">O</span><span class="letter">u</span><span
+                                    class="letter">r</span></span>
+                            <span class="word"><span class="letter">P</span><span class="letter">a</span><span
+                                    class="letter">r</span><span class="letter">t</span><span
+                                    class="letter">n</span><span class="letter">e</span><span
+                                    class="letter">r</span><span class="letter">s</span><span
+                                    class="letter">h</span><span class="letter">i</span><span
+                                    class="letter">p</span><span class="letter">s</span></span>
+                            <span class="word"><span class="letter">T</span><span class="letter">r</span><span
+                                    class="letter">u</span><span class="letter">s</span><span
+                                    class="letter">t</span><span class="letter">e</span><span
+                                    class="letter">d</span></span>
+                            <span class="word"><span class="letter">b</span><span class="letter">y</span></span>
+                            <span class="word"><span class="letter">I</span><span class="letter">n</span><span
+                                    class="letter">d</span><span class="letter">u</span><span
+                                    class="letter">s</span><span class="letter">t</span><span
+                                    class="letter">r</span><span class="letter">y</span></span>
+                            <span class="word"><span class="letter">L</span><span class="letter">e</span><span
+                                    class="letter">a</span><span class="letter">d</span><span
+                                    class="letter">e</span><span class="letter">r</span><span
+                                    class="letter">s</span></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact u-p-128">
+            <div class="container--sm">
+            </div>
+            <div class="contact__inner u-m50">
+                <div class="contact__text">
+                    <div class="header__subtitle container--sm">
+                        <span class="subtitle">contact us</span>
+                    </div>
+                    <h2 class="contact_title u-mt-128 wow animate__fadeInUp">Let’s Build<br><span>Value Together</span>
+                    </h2>
+                    <div class="contact__info container--sm u-mt-64 wow animate__fadeInUp">
+                        <p>Interested in co-investing or exploring partnership opportunities?</p>
+                        <div class="contact__info-adress u-mt-128">
+                            <div class="contact__info-adress-item">
+                                <h3>E-mail</h3>
+                                <a href="mailto:info@nordmere.com">info@nordmere.com</a>
+                            </div>
+                            <div class="contact__info-adress-item">
+                                <h3>Our Location</h3>
+                                <span>Dubai, UAE, DMCC Business<br>Centre, Unit BA2541</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-form" class="contact__form wow animate__fadeInUp">
+                    <h2>Get in touch</h2>
+                    <div class="inputbox-content">
+                        <input id="input0" type="text" autocomplete="none" required />
+                        <label for="input0">Full name</label>
+                        <span class="underline"></span>
+                    </div>
+                    <div class="inputbox-content">
+                        <input id="input1" type="text" autocomplete="none" required />
+                        <label for="input1">E-mail</label>
+                    </div>
+                    <div class="inputbox-content">
+                        <input id="input1" type="text" autocomplete="none" required />
+                        <label for="input1">Subject</label>
+                    </div>
+                    <div class="inputbox-content">
+                        <textarea id="input1" name="message" autocomplete="off" required rows="4"
+                            placeholder=" "></textarea>
+                        <label for="input1">Message</label>
+                    </div>
+                    <button class="btn__send">Send message</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer u-m50">
+        <img src="assets/images/png/logo-footer.png" alt="">
+    </footer>
+    </head>
+
+    <body>
+
+    </body>
+    <script src="assets/inc/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/inc/wow/wow.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</html>
